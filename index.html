@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="przycisk()">Dodaj</button>
+    <p>Wynik: <span id="wynik"></span></p>
+    <script>
+      let a = 0
+      const wynik = document.getElementById('wynik')
+      function przycisk() {
+        a = a + 1
+        wynik.innerText = a
+      }
+    </script>
+  </body>
+</html>

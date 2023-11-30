@@ -1,0 +1,11 @@
+{
+  "name": "zadania",
+  "version": "1.0.1",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "node start"
+  },
+  "author": "RanQ",
+  "license": "ISC"
+}

@@ -4,55 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        background-color: rgb(94, 94, 94);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-          sans-serif;
-        height: 100vh;
-        width: 100%;
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      p {
-        border: 3px solid white;
-        padding: 50px;
-        height: 250px;
-        width: 500px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 75px;
-        color: white;
-        border-radius: 25px;
+      .off {
+        display: none;
       }
     </style>
   </head>
   <body>
-    <p id="zegar"></p>
+    <button onclick="przycisk()" style="height: 200px; width: 500px">
+      dssdds
+    </button>
+
+    <p id="cos" class="off">dadadada</p>
 
     <script>
-      function zegar() {
-        let data = new Date()
-        let godzina = data.getHours()
-        if (godzina < 10) godzina = '0' + godzina
-        let minuta = data.getMinutes()
-        if (minuta < 10) minuta = '0' + minuta
-        let sekunda = data.getSeconds()
-        if (sekunda < 10) sekunda = '0' + sekunda
-        let teraz_jest = godzina + ':' + minuta + ':' + sekunda
-        document.getElementById('zegar').innerHTML = teraz_jest
-        setTimeout('zegar()', 1000)
-      }
+      const a = document.getElementById('cos')
 
-      zegar()
+      function przycisk() {
+        a.classList.toggle('off')
+      }
     </script>
   </body>
 </html>
